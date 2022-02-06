@@ -8,13 +8,19 @@ int main(void)
 {
 	int c = 0;
 
-	while (c <= 8)
+	while (c <= 9)
 	{
 		putchar(c % 10 + '0');
+		if (c != 9)
+		{
 		putchar(',');
 		putchar(' ');
+		}
+		else
+		{
+			putchar('\n');
+		}
 		c++;
 	}
-	putchar('9');
 	return (0);
 }
