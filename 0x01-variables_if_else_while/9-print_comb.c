@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	char c = '0';
+	int c = 0;
 
-	while (c <= '8')
+	while (c <= 8)
 	{
-		putchar(c);
+		putchar(c % 10 + '0');
 		putchar(',');
 		putchar(' ');
 		c++;
