@@ -14,8 +14,11 @@ int main(void)
 		{
 			putchar('0' + a / 10);
 			putchar('0' + a % 10);
-			putchar(',');
-			putchar(' ');
+			if (a != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		a++;
 	}
