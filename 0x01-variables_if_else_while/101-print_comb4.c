@@ -12,7 +12,7 @@ int main(void)
 	{
 		if ((a % 10) > ((a / 10) % 10))
 		{
-			if (((a / 10 ) % 10) > (a / 100))
+			if (((a / 10) % 10) > (a / 100))
 			{
 				putchar('0' + a / 100);
 				putchar('0' + (a / 10) % 10);
@@ -29,4 +29,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-		
