@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print sign - prints the sign of a number.
+ * print sign - writes the sign +, -, or 0 to the stdout
  * @n: The number to check
  *
  * Return: On success 1, 0 or -1.
@@ -21,6 +21,6 @@ int print_sign(int n)
 	else
 	{
 		_putchar('-');
-		return (-1); 
+		return (-1);
 	}
 }
