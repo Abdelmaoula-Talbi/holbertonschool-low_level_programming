@@ -39,6 +39,12 @@ void times_table(void)
 				_putchar('0' + (a * b));
 				_putchar('\n');
 			}
+			else if (a == 0)
+			{
+				_putchar('0' + (a * b));
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
