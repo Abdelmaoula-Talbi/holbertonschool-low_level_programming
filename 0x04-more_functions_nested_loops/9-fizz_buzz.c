@@ -13,26 +13,22 @@ int main(void)
 	{
 		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("FizzBuzz");
-			printf(" ");
+			printf("FizzBuzz ");
 		}
 		else if (n % 3 == 0)
 		{
-			printf("Fizz");
-			printf(" ");
+			printf("Fizz ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("Buzz");
-			printf(" ");
+			printf("Buzz ");
 		}
-		else if (n != 100)
+		else if (n == 100)
 		{
 			printf("%d", n);
-			printf(" ");
 		}
 		else
-			printf("%d", n);
+			printf("%d ", n);
 	}
 	putchar('\n');
 	return (0);
