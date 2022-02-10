@@ -2,8 +2,9 @@
 
 /**
  * add - adds two integers.
- * @a, @b: The integers to add.
- * Return - The result of add.
+ * @a: first integer to add.
+ * @b: second integer to add.
+ * Return: r The result of add.
  */
 int add(int a, int b)
 {
