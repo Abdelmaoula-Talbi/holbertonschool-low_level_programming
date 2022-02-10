@@ -7,15 +7,8 @@
  */
 int add(int a, int b)
 {
-	int r = a + b;
+	int r;
 
-	if (a < 0 || b < 0)
-	{
-		r = -r;
-	}
-	else
-	{
-		r = r;
-	}
+	r = a + b;
 	return (r);
 }
