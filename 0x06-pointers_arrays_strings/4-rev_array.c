@@ -2,7 +2,7 @@
 
 /**
  * reverse_array - reverses the content of an array of integers.
- * @a; array to reverse.
+ * @a: array to reverse.
  * @n: number of elements in the array.
  */
 void reverse_array(int *a, int n)
@@ -11,7 +11,7 @@ void reverse_array(int *a, int n)
 	int j = n - 1;
 	int m;
 
-	while (( i <= n && j >= 0) && (j > i))
+	while(( i <= n && j >= 0) && (j > i))
 	{
 		m = a[i];
 		a[i] = a[j];
