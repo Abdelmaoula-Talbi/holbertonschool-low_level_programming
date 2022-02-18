@@ -21,9 +21,9 @@ char *cap_string(char *str)
 		k = 0;
 		while (s[k] != '\0')
 		{
-			if (str[i] == s[k])
+			if ('a' <= str[i + 1] && str[i + 1] <= 'z')
 			{
-				if ('a' <= str[i + 1] && str[i + 1] <= 'z')
+				if (str[i] == s[k]) 
 				{
 					str[i + 1] = str[i + 1] - 32;
 				}
