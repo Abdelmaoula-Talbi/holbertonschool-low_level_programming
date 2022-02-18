@@ -11,7 +11,6 @@ char *cap_string(char *str)
 	int k;
 	char s[] = {' ', '	', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	i = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if ('a' <= str[0] && str[0] <= 'z')
