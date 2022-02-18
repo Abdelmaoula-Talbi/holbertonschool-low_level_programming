@@ -19,11 +19,11 @@ char *cap_string(char *str)
 		}
 		for (k = 0; s[k] != '\0'; k++)
 		{
-			if ('a' <= str[i + 1] && str[i + 1] <= 'z')
+			if ('a' <= str[i] && str[i] <= 'z')
 			{
-				if (str[i] == s[k])
+				if (str[i - 1] == s[k])
 				{
-					str[i + 1] = str[i + 1] - 32;
+					str[i] = str[i] - 32;
 				}
 			}
 		}
