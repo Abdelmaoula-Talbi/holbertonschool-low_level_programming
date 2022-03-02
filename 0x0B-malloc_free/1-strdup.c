@@ -21,10 +21,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (strlen(ptr) < strlen(str))
-	{
-		return (NULL);
-	}
 	for (i = 0; i <= size; i++)
 	{
 		ptr[i] = str[i];
