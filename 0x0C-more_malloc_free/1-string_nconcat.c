@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[i] = s1[i];
 	}
-	for (i = 0; i <= n; i++)
+	for (i = 0; i <= size; i++)
 	{
 		p[i + strlen(s1)] = s2[i];
 	}
