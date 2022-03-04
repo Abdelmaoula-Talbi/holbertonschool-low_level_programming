@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	if (n > strlen(s2))
+	if (n >= strlen(s2))
 	{
 		size = strlen(s1) + strlen(s2);
 	}
@@ -36,11 +36,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= strlen(s1); i++)
+	for (i = 0; i < strlen(s1); i++)
 	{
 		p[i] = s1[i];
 	}
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
 		p[strlen(s1) + i] = s2[i];
 	}
