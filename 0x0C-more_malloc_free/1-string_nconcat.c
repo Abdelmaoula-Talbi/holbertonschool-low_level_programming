@@ -37,13 +37,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = j;
 	if (len2 <= n)
 	{	
-		size = len1 + len2 + 1;
+		size = len1 + len2;
 	}
 	else if (len2 > n)
 	{
-		size = len1 + n + 1;
+		size = len1 + n;
 	}
-	p = malloc(sizeof(c) * size);
+	p = malloc((sizeof(c) * size) + 1);
 	if (p == NULL)
 	{
 		return (NULL);
