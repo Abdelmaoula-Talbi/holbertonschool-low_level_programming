@@ -56,6 +56,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[k + len1] = s2[k];
 	}
-	p[len1 + n] = '\0';
+	p[len1 + n + 1] = '\0';
 	return (p);
 }
