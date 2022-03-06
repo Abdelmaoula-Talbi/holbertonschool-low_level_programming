@@ -15,6 +15,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p;
 	char c;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	i = 0;
 	while (s1[i] != '\0')
 	{
@@ -27,14 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 	}
 	len2 = j;
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	if (len2 <= n)
 	{	
 		size = len1 + len2;
