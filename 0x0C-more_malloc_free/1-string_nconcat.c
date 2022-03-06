@@ -38,11 +38,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (len2 <= n)
 	{	
 		size = len1 + len2;
+		n = len2;
 	}
 	else if (len2 > n)
 	{
 		size = len1 + n;
-		len2 = n;
 	}
 	p = malloc((sizeof(c) * size) + 1);
 	if (p == NULL)
@@ -53,7 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[k] = s1[k];
 	}
-	for (k = 0; k < len2; k++)
+	for (k = 0; k < n; k++)
 	{
 		p[k + len1] = s2[k];
 	}
