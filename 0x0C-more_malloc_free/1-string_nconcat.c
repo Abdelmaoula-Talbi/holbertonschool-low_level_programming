@@ -38,7 +38,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (len2 <= n)
 	{	
 		size = len1 + len2;
-		n = len2;
 	}
 	else if (len2 > n)
 	{
