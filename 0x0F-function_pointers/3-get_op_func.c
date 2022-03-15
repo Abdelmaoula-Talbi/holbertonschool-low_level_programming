@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * (*get_op_func(char *s)) - selects the correct function to perform
+ * get_op_func(char *s)) - selects the correct function to perform
  * the operation asked by the user.
  * Return: pointer to the function that corresponds
  * to the operator given as a parameter.
