@@ -3,12 +3,6 @@
 #include <string.h>
 #include <stdarg.h>
 
-typedef struct print_t
-{
-	char *c;
-	void (*func)(va_list);
-} pr_t;
-
 /**
  * pr_char - print a char.
  * @c: char to print.
