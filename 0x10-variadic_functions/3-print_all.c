@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		j = 0;
-		while (prs[j].c != NULL)
+		while (j < 4)
 		{
 			if (format[i] == *(prs[j].c))
 			{
