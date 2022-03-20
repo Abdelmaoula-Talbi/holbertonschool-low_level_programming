@@ -4,7 +4,7 @@
 
 /**
  * pr_char - print a char.
- * @c: char to print.
+ * @c: argument char to print.
  * Return: Nothing.
  */
 void pr_char(va_list c)
@@ -14,17 +14,17 @@ void pr_char(va_list c)
 
 /**
  * pr_int - print an integer.
- * @i: integer to print.
+ * @i: argument integer to print.
  * Return: Nothing.
  */
 void pr_int(va_list i)
 {
-	printf("%d", va_arg(i, int));
+	printf("%i", va_arg(i, int));
 }
 
 /**
  * pr_float - print a float.
- * @f: float to print.
+ * @f: argument float to print.
  * Return: Nothing.
  */
 void pr_float(va_list f)
@@ -34,7 +34,7 @@ void pr_float(va_list f)
 
 /**
  * pr_string - print an array of characters.
- * @str: string to print.
+ * @str: argument string to print.
  * Return: Nothing.
  */
 void pr_string(va_list str)
