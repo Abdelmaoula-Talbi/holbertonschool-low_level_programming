@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 	};
 	int i, j;
 	va_list ap;
-	char* sep = "";
+	char *sep = "";
 
 	va_start(ap, format);
 	i = 0;
@@ -76,7 +76,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (prs[j].c != NULL)
 		{
-			if(format[i] == *(prs[j].c))
+			if (format[i] == *(prs[j].c))
 			{
 				printf("%s", sep);
 				prs[j].func(ap);
