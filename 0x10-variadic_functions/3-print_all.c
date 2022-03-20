@@ -81,7 +81,6 @@ void print_all(const char * const format, ...)
 				printf("%s", sep);
 				prs[j].func(ap);
 				sep = ", ";
-				break;
 			}
 			j++;
 		}
