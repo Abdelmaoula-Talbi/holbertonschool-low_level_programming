@@ -19,7 +19,7 @@ void pr_char(va_list c)
  */
 void pr_int(va_list i)
 {
-	printf("%i", va_arg(i, int));
+	printf("%d", va_arg(i, int));
 }
 
 /**
