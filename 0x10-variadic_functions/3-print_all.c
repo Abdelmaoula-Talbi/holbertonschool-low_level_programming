@@ -45,12 +45,9 @@ void pr_string(va_list str)
 	s = va_arg(str, char *);
 	if (s == NULL)
 	{
-		printf("(nil)");
+		s = ("(nil)");
 	}
-	else
-	{
-		printf("%s", s);
-	}
+	printf("%s", s);
 }
 
 /**
