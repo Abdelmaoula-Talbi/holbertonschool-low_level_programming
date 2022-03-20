@@ -2,6 +2,12 @@
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 
+/**
+ * struct print_t - structure to define function to print.
+ * @c: the type to print.
+ * @func: the function associated to the type.
+ */
+
 typedef struct print_t
 {
 	char *c;
