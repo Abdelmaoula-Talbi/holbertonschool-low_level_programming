@@ -70,17 +70,16 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 	i = 0;
-	while (format[i] != '\0' && format != NULL)
+	while (format[i] != '\0')
 	{
 		j = 0;
-		while (prs[j].c != NULL)
+		while (j < 4)
 		{
 			if (format[i] == *(prs[j].c))
 			{
 				printf("%s", sep);
 				prs[j].func(ap);
 				sep = ", ";
-				break;
 			}
 			j++;
 		}
