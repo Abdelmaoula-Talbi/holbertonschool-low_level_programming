@@ -12,5 +12,5 @@ main:
     xor     rdi, rdi
     syscall
 
-    hello   db "Hello,World",0x0A
+    hello   db "Hello,World", 10
     len     equ $ - hello
