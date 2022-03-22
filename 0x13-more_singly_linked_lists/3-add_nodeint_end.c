@@ -3,7 +3,7 @@
 
 /**
  * add_nodeint_end - add a new node at the end of the listint_t list.
- * @h: pointer to pointer to the head of listint_t list.
+ * @head: pointer to pointer to the head of listint_t list.
  * @n: integer member of the listint_t list.
  * Return: Nothing.
  */
