@@ -1,6 +1,22 @@
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
+/**
+ * _pow - calculate the power of a number.
+ * @number: the number to calculate its power.
+ * @exponent: the exponent.
+ * Return: result of the power operation.
+ */
+int _pow(int number, int exponent)
+{
+	int result = 1;
+	while (exponent > 0)
+	{
+		result = result * number;
+		exponent--;
+	}
+	return (result);
+}
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
@@ -11,20 +27,22 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int size = strlen(b), base = 1;
-	int i;
+	unsigned int size = strlen(b);
+	int i, e = 0;
 	unsigned int uint = 0;
 
 	if (b == NULL)
+	{
 		return (0);
+	}
 	for (i = size - 1; i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
 		{
 			return (0);
 		}
-		uint += ((b[i] - 48) * base);
-		base = base * 2;
+		uint += ((b[i] - 48) * _pow(2, e));
+		e++;
 	}
 	return (uint);
 }
