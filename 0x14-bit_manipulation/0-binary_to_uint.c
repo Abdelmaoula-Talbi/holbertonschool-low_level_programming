@@ -14,14 +14,12 @@ unsigned int binary_to_uint(const char *b)
 	int size = strlen(b);
 	unsigned int uint = 0;
 
-	if (b == NULL)
+	for (i = size - 1; i >= 0  ; i--)
 	{
-		return (0);
-	}
-	for (i = size - 1; i >= 0 ; i--)
-	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b == NULL || (b[i] != '0' && b[i] != '1'))
+		{
 			return (0);
+		}
 		uint += ((b[i] - 48) * base);
 		base = base * 2;
 	}
