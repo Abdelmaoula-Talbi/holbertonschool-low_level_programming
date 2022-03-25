@@ -10,6 +10,7 @@
 int _pow(int number, int exponent)
 {
 	int result = 1;
+
 	while (exponent > 0)
 	{
 		result = result * number;
@@ -31,13 +32,9 @@ unsigned int binary_to_uint(const char *b)
 	int i, e = 0;
 	unsigned int uint = 0;
 
-	if (b == NULL)
-	{
-		return (0);
-	}
 	for (i = size - 1; i >= 0; i--)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b == NULL || (b[i] != '0' && b[i] != '1'))
 		{
 			return (0);
 		}
