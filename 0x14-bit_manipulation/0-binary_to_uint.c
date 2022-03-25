@@ -11,7 +11,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, size = strlen(b), base = 1;
+	unsigned int size = strlen(b), base = 1;
+	int i;
 	unsigned int uint = 0;
 
 	if (b == NULL)
@@ -23,11 +24,9 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 		{
 			return (0);
-			break;
 		}
 		uint += ((b[i] - 48) * base);
 		base = base * 2;
 	}
 	return (uint);
 }
-
