@@ -14,25 +14,18 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int /*fd_r, */fd_w, res_w;
-	/*char *text = malloc(strlen(text_content));*/
+	int fd_w, res_w;
 
 	if (filename == NULL)
 		return (-1);
-	/*fd_r = open(text_content, O_RDONLY);*/
 	fd_w = creat(filename, 0600);
-	/*if (fd_r == -1)
-	       return (-1);*/
 	if (fd_w == -1)
 		return (-1);
-	/*read(fd_r, text, strlen(text_content));*/
 	if (text_content != NULL)
 		res_w = write(fd_w, text_content, strlen(text_content));
 	if (res_w == -1)
 		return (-1);
 
-	/*free(text);*/
-	/*close(fd_r);*/
 	close(fd_w);
 	return (1);
 }
