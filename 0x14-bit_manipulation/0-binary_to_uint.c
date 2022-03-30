@@ -28,7 +28,7 @@ int _pow(int number, int exponent)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int size = strlen(b);
+	unsigned int size;
 	int i, e = 0;
 	unsigned int uint = 0;
 
@@ -36,6 +36,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
+	size = strlen(b);
 	for (i = size - 1; i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
