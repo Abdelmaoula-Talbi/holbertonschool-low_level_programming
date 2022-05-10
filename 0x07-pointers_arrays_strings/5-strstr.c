@@ -29,11 +29,8 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (j == strlen(needle) - 1)
 					return (haystack + k);
-				else
-				{
-					i++;
-					j++;
-				}
+				i++;
+				j++;
 			}
 		}
 		i++;
