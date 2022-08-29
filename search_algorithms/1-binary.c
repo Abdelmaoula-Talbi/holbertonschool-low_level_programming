@@ -4,6 +4,7 @@
  * print_array - print all elements of array of integers
  * @array: pointer to the first element of the array to print its elements
  * @size: number of elements in the array
+ * @start: index in @array to start printing from
  * Return: Nothing
  */
 void print_array(const int *array, size_t size, unsigned int start)
@@ -42,7 +43,6 @@ int binary_search(int *array, size_t size, int value)
 	while (index <= limit)
 	{
 		mid = floor((index + limit) / 2);
-		/*mid = floor((index + limit) / 2);*/
 		printf("Searching in array: ");
 		print_array(array, limit, index);
 		if (array[mid] == value)
@@ -50,12 +50,9 @@ int binary_search(int *array, size_t size, int value)
 		else if (array[mid] < value)
 		{
 			index = mid + 1;
-			/**array = (mid + 1);
-			binary_search(array, (size - mid), value);*/
 		}
 		else
 			limit = mid - 1;
-			/*binary_search(array, mid, value);*/
 	}
 	return (-1);
 }
