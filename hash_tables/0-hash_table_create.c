@@ -12,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned long int i;
 
 	if (!new_table || !new_node)
-		return NULL;
+		return (NULL);
 	new_node->key = NULL;
 	new_node->value = NULL;
 	new_node->next = NULL;
