@@ -14,9 +14,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!ht || !new_node || !key || !value)
 		return (0);
-	if (strlen(key) < 2)
+	if (strlen(key) < 1)
 		return (0);
-	new_node->key = (char *)key;
+	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 	index = key_index((const unsigned char *)key, ht->size);
 	i = 0;
