@@ -27,12 +27,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (!ht->array[i])
 				new_node->next = NULL;
 			else
-				(*new_node->next) = (*ht->array[i]);
-			(*ht->array[i]) = (*new_node);
+				new_node->next = ht->array[i];
+			ht->array[i] = new_node;
 			i++;
 		}
-		else
-			return (0);
 	}
 	return (1);
 }
