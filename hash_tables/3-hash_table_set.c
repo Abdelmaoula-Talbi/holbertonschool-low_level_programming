@@ -25,7 +25,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (i == index)
 		{
 			if (!ht->array[i])
+			{
 				new_node->next = NULL;
+				ht->array[i] = new_node;
+			}
 			else
 			{
 				if (strcmp(key, ht->array[i]->key) == 0)
